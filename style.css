@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.icons {
+    text-align: right;
+    position: relative;
+    left: 50%;
+}
+
+.icons i {
+    padding: 12px;
+}
+
+header .logo {
+    width: 80%;
+}
+
+.logo img {
+    position: relative;
+    right: 120%;
+    width: 100%
+}
+
+nav a {
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+    position: relative;
+    right: 19%;
+    padding: 24px;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    background-image: url(https://htmldemo.net/kofi/kofi/assets/images/hero-slider/home-2/slide-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+main .text {
+    position: relative;
+    top: 50%;
+}
+
+main .text h5 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+main .text h2 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1.125;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+main .text p {
+    font-size: 18px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+main .text a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    text-align: center;
+    white-space: nowrap;
+    border-width: 2px;
+    border-radius: 50px;
+    gap: 6px;
+    background-color: #C7A17A;
+    border: none;
+    margin-top: 30px;
+}
+
+i {
+    font-size: 13px;
+}
+
+#About {
+    padding: 10rem 0;
+}
+
+#About span {
+    font-size: 16px;
+    line-height: 1.25;
+    display: block;
+    margin-bottom: 15px;
+    color: #C7A17A;
+}
+
+#About h2 {
+    font-size: 45px;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+    font-family: "Oswald", sans-serif;
+}
+
+#About p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75;
+}
+
+#About a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    text-align: center;
+    white-space: nowrap;
+    border-width: 2px;
+    border-radius: 50px;
+    gap: 6px;
+    margin-top: 20px;
+
+}
+
+#Service .main-text p {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+    margin-left: 5rem;
+}
+#Service .main-text h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+}
