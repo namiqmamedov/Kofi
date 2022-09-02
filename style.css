@@ -11,9 +11,8 @@ header {
 }
 
 .icons {
-    text-align: right;
-    position: relative;
-    left: 50%;
+    text-align: end;
+    margin-right: 35px;
 }
 
 .icons i {
@@ -25,9 +24,7 @@ header .logo {
 }
 
 .logo img {
-    position: relative;
-    right: 120%;
-    width: 100%
+    margin-left: 15px;
 }
 
 nav a {
@@ -95,9 +92,88 @@ main .text a {
     margin-top: 30px;
 }
 
-i {
-    font-size: 13px;
+
+
+
+.menu-bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+
+    position: relative;
 }
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+
+    position: relative;
+}
+
+ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+
+ul li a:hover {
+    color: var(--color-primary);
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+    display: none;
+}
+
+ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown-menu-1 {
+    display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+}
+
+
 
 #About {
     padding: 10rem 0;
@@ -152,6 +228,7 @@ i {
     color: #C7A17A;
     margin-left: 5rem;
 }
+
 #Service .main-text h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
@@ -160,3 +237,265 @@ i {
     margin-bottom: 8px;
     color: #1F2226;
 }
+
+#Service .card img {
+    width: 30%;
+    margin-top: 35px;
+    padding-left: 20px;
+}
+
+#Service .card {
+    width: 100%;
+    height: 250px;
+    margin: 20px;
+}
+
+#Service #main-text p {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+}
+
+#Service #main-text h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+
+}
+
+#Area #main-text p {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+}
+
+#Area #main-text h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+
+}
+
+
+#Area {
+    padding: 5rem 0;
+}
+
+#Area #main-text {
+    padding-top: 20px;
+}
+
+#Area .card-body .reservation-text h6 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #C7A17A;
+}
+
+#Area .card-body .book h6 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+}
+
+#Area .map {
+    position: absolute;
+    top: 7%;
+}
+
+#Area button {
+    font-weight: 600;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 180px;
+    position: relative;
+    right: 17%;
+    text-align: center;
+    white-space: nowrap;
+    border-width: 2px;
+}
+
+.right-form {
+    position: relative;
+    left: 9%;
+}
+#Collection #main-text h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1F2226;
+    font-size: 40px;
+
+}
+#Collection #main-text p{
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+
+}
+#Collection #main-text button{
+    border: none;
+    padding: 20px;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+
+}
+#Collection{
+    overflow: hidden;
+}
+#Collection .card{
+    position: relative;
+    overflow-x: hidden;
+}
+#Collection .card img{
+    width: 100%;
+    
+}
+#Collection .bottom .card-body h5{
+    line-height: inherit;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1F2226;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+
+}
+#Collection .product-price{
+font-size: 20px;
+font-weight: 600;
+line-height: 1;
+display: flex;
+align-items: center;
+color: #C7A17A;
+gap: 10px;
+}
+.product-badge-left span{
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 93%;
+    left: 5%;
+    
+    min-width: 50px;
+    padding: 3px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50px;
+    
+    color: #fff;
+    background-color: #C7A17A;
+
+}
+.product-badge-right span{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    position: absolute;
+    bottom: 87%;
+    left: 75%;    
+    min-width: 50px;
+    padding: 3px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #1F2226;
+}
+
+.product-badge-top-right span{
+    position: absolute;
+    bottom: 93%;
+    left: 75%;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    
+    min-width: 50px;
+    padding: 3px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #1F2226;
+}
+
+#phone-header{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    
+    
+}
+.ph-all .left-logo img{
+    position: relative;
+    right: 15%;
+}
+.ph-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.right .icons{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media(max-width:576px) {
+    header{
+        display: none;
+    }
+    main{
+        display: none;
+    }
+    #About{
+        display: none;
+    }
+    #Service{
+        display: none;
+    }
+    #Area{
+        display: none;
+    }
+    #Collection{
+        display: none;
+    }
+    #phone-header{
+        display: block;
+    }
+}
+
+
