@@ -7,8 +7,13 @@
 header {
     display: flex;
     align-items: center;
-    padding: 2rem 0;
+    
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: white;
 }
+
 
 .icons {
     text-align: end;
@@ -24,19 +29,79 @@ header .logo {
 }
 
 .logo img {
-    margin-left: 15px;
+    margin-left: 35px;
 }
 
-nav a {
+
+
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 18px;
+
+   
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #C7A17A;
+    
+}
+
+nav ul li ul.dropdown {
+    min-width: 230%;
+    /* Set width of the dropdown */
+    background: white;
+    display: none;
+    top: 159%;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+    /* Display the dropdown */
+}
+
+nav ul li ul.dropdown li {
+    display: block;
+}
+.navbar{
+    display: flex;
+    position: relative;
+    right: 20%;
+    padding-top: 20px;
+    margin-right: 90px;
+    justify-content: left;
+    align-items: center;
+}
+
+
+
+/* nav a {
     font-size: 18px;
     line-height: 30px;
     color: black;
     position: relative;
-    right: 19%;
+    display: block;
     padding: 24px;
 
     font-family: 'Open Sans', sans-serif;
-}
+} */
 
 main {
     background-image: url(https://htmldemo.net/kofi/kofi/assets/images/hero-slider/home-2/slide-1.jpg);
@@ -220,16 +285,15 @@ ul li:hover .dropdown-menu ul li {
 
 }
 
-#Service .main-text p {
+#Service #main-text p {
     font-size: 18px;
     line-height: 1.25;
     margin-bottom: 10px;
     letter-spacing: 0.25px;
     color: #C7A17A;
-    margin-left: 5rem;
 }
 
-#Service .main-text h2 {
+#Service #main-text h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
     line-height: 1.25;
@@ -333,7 +397,8 @@ ul li:hover .dropdown-menu ul li {
     position: relative;
     left: 9%;
 }
-#Collection #main-text h2{
+
+#Collection #main-text h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     line-height: 1.25;
@@ -344,7 +409,8 @@ ul li:hover .dropdown-menu ul li {
     font-size: 40px;
 
 }
-#Collection #main-text p{
+
+#Collection #main-text p {
     font-size: 18px;
     line-height: 1.25;
     margin-bottom: 10px;
@@ -352,7 +418,8 @@ ul li:hover .dropdown-menu ul li {
     color: #C7A17A;
 
 }
-#Collection #main-text button{
+
+#Collection #main-text button {
     border: none;
     padding: 20px;
     background-color: white;
@@ -367,18 +434,22 @@ ul li:hover .dropdown-menu ul li {
     background-color: transparent;
 
 }
-#Collection{
+
+#Collection {
     overflow: hidden;
 }
-#Collection .card{
+
+#Collection .card {
     position: relative;
     overflow-x: hidden;
 }
-#Collection .card img{
+
+#Collection .card img {
     width: 100%;
-    
+
 }
-#Collection .bottom .card-body h5{
+
+#Collection .bottom .card-body h5 {
     line-height: inherit;
     display: inline-block;
     cursor: pointer;
@@ -388,40 +459,43 @@ ul li:hover .dropdown-menu ul li {
     font-family: 'Oswald', sans-serif;
 
 }
-#Collection .product-price{
-font-size: 20px;
-font-weight: 600;
-line-height: 1;
-display: flex;
-align-items: center;
-color: #C7A17A;
-gap: 10px;
+
+#Collection .product-price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    color: #C7A17A;
+    gap: 10px;
 }
-.product-badge-left span{
+
+.product-badge-left span {
     font-size: 10px;
     font-weight: 700;
     position: absolute;
     bottom: 93%;
     left: 5%;
-    
+
     min-width: 50px;
     padding: 3px 10px;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
     border-radius: 50px;
-    
+
     color: #fff;
     background-color: #C7A17A;
 
 }
-.product-badge-right span{
+
+.product-badge-right span {
     font-size: 10px;
     font-weight: 700;
     line-height: 14px;
     position: absolute;
     bottom: 87%;
-    left: 75%;    
+    left: 75%;
     min-width: 50px;
     padding: 3px 10px;
     text-align: center;
@@ -431,14 +505,14 @@ gap: 10px;
     background-color: #1F2226;
 }
 
-.product-badge-top-right span{
+.product-badge-top-right span {
     position: absolute;
     bottom: 93%;
     left: 75%;
     font-size: 10px;
     font-weight: 700;
     line-height: 14px;
-    
+
     min-width: 50px;
     padding: 3px 10px;
     text-align: center;
@@ -448,54 +522,467 @@ gap: 10px;
     background-color: #1F2226;
 }
 
-#phone-header{
+#phone-header {
     display: none;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    
-    
+    overflow-x: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
 }
-.ph-all .left-logo img{
+
+
+.ph-all .left-logo img {
     position: relative;
     right: 15%;
+
 }
-.ph-all{
+
+.ph-all {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
-.right .icons{
-    padding-left: 20px;
+
+.right .icons {
+    padding-left: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-@media(max-width:576px) {
-    header{
-        display: none;
-    }
-    main{
-        display: none;
-    }
-    #About{
-        display: none;
-    }
-    #Service{
-        display: none;
-    }
-    #Area{
-        display: none;
-    }
-    #Collection{
-        display: none;
-    }
-    #phone-header{
-        display: block;
-    }
+#phone-main {
+    background-image: url(https://htmldemo.net/kofi/kofi/assets/images/hero-slider/home-2/slide-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+    display: none;
 }
 
 
+#phone-main .text h5 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #fff;
+    padding-top: 10px;
+    margin-right: 10px;
+    position: relative;
+    right: 5%;
+}
+
+#phone-main .text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.125;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    right: 5%;
+    font-family: 'Oswald', sans-serif;
+}
+
+#phone-main .text p {
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    right: 5%;
+    font-family: "Open Sans", sans-serif;
+}
+
+#phone-main .text a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 20px;
+    text-align: center;
+    white-space: nowrap;
+    border-width: 2px;
+    border-radius: 50px;
+    gap: 6px;
+    background-color: #C7A17A;
+    border: none;
+    position: relative;
+    right: 6%;
+    margin-top: 10px;
+}
+
+#phone-about {
+    display: none;
+    overflow: hidden;
+}
+
+#phone-about .text img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#phone-about .text-bottom {
+    margin-top: 30px;
+    position: relative;
+    right: 5%;
+}
+
+#phone-about span {
+    font-size: 16px;
+    line-height: 1.25;
+    display: block;
+    margin-bottom: 15px;
+    color: #C7A17A;
+}
+
+#phone-about h2 {
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+    font-family: "Oswald", sans-serif;
+}
+
+#phone-about p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75;
+    margin-bottom: 10px;
+}
+
+#phone-about a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 22px;
+    background-color: black;
+    text-align: center;
+    white-space: nowrap;
+    border-width: 2px;
+    border-radius: 50px;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+#phone-service {
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+#phone-service #main-text p {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+
+}
+
+#phone-service #main-text h2 {
+    font-family: "Oswald", sans-serif;
+
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+    font-size: 24px;
+}
+
+#phone-service .card img {
+    width: 30%;
+    margin-top: 35px;
+    padding-left: 20px;
+}
+
+#phone-service .card {
+
+
+    margin: 25px;
+}
+
+#phone-service #main-text p {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+}
+
+#phone-service #main-text h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+}
+
+
+#phone-area #main-text p {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+}
+
+#phone-area #main-text h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+
+}
+
+
+#phone-area {
+    padding: 5rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#phone-area #main-text {
+    padding-top: 20px;
+    margin-left: 55px;
+}
+
+#phone-area #main-text p {
+    font-size: 16px;
+}
+
+#phone-area #main-text h2 {
+    font-size: 24px;
+}
+
+#phone-area .card-body .reservation-text h6 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #C7A17A;
+}
+
+
+
+#phone-area .card-body .book h6 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+}
+
+#phone-area .map {
+    position: relative;
+    right: 3.5%;
+}
+
+#phone-area button {}
+
+#phone-area .right-form {
+    margin-top: 40px;
+    margin-right: 110px;
+
+}
+
+#phone-area .card {
+    width: 140%;
+
+}
+
+
+#phone-collection #main-text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1F2226;
+    font-size: 24px;
+
+
+}
+
+#phone-collection #main-text p {
+    font-size: 16px;
+    line-height: 1.25;
+
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+
+}
+
+#phone-collection #main-text button {
+    border: none;
+    padding: 5px;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 3;
+    position: relative;
+
+    font-weight: normal;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+
+}
+
+#phone-collection {
+    overflow: hidden;
+}
+
+#phone-collection .card {
+    position: relative;
+    overflow-x: hidden;
+}
+
+#phone-collection .card img {
+    width: 100%;
+
+}
+
+#phone-collection .card-body h5 {
+    line-height: inherit;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1F2226;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#phone-collection .product-price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    color: #C7A17A;
+    gap: 10px;
+}
+
+#product-collection .product-badge-left span {
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 93%;
+    left: 5%;
+    min-width: 50px;
+    padding: 3px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #C7A17A;
+
+}
+
+#product-collection .product-badge-right span {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    position: absolute;
+    bottom: 87%;
+    left: 75%;
+    min-width: 50px;
+    padding: 3px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #1F2226;
+}
+
+#phone-collection #product-collection .product-badge-top-right span {
+    position: absolute;
+    bottom: 93%;
+    left: 75%;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+
+    min-width: 50px;
+    padding: 3px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #1F2226;
+}
+
+#phone-collection {
+    display: none;
+}
+
+#phone-service {
+    display: none;
+}
+
+#phone-area {
+    display: none;
+}
+
+
+
+@media(max-width:576px) {
+    header {
+        display: none;
+    }
+
+    main {
+        display: none;
+    }
+
+    #About {
+        display: none;
+    }
+
+    #Service {
+        display: none;
+    }
+
+    #Area {
+        display: none;
+    }
+
+    #Collection {
+        display: none;
+    }
+
+    #phone-header {
+        display: block;
+    }
+
+    #phone-main {
+        display: block;
+    }
+
+    #phone-about {
+        display: block;
+    }
+
+    #phone-service {
+        display: block;
+    }
+
+    #phone-area {
+        display: block;
+    }
+
+    #phone-collection {
+        display: block;
+    }
+
+
+}
