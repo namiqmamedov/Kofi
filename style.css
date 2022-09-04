@@ -80,7 +80,7 @@ nav ul li {
     line-height: 21px;
     text-align: left;
     padding: 10px 20px;
-    
+
 }
 
 nav ul li a {
@@ -94,7 +94,7 @@ nav ul li a:hover {
     color: #C7A17A;
     text-decoration: none;
 }
-                
+
 nav ul li ul.dropdown {
     min-width: 250%;
     background: white;
@@ -105,9 +105,10 @@ nav ul li ul.dropdown {
     z-index: 999;
     left: 0;
     transition: all 0.4s ease 0s;
-    
+
 }
-nav .sub-menu:hover .dropdown{
+
+nav .sub-menu:hover .dropdown {
     opacity: 1;
     visibility: visible;
 }
@@ -495,7 +496,6 @@ main .text a {
     font-size: 10px;
     font-weight: 700;
     line-height: 14px;
-
     min-width: 50px;
     padding: 3px 10px;
     text-align: center;
@@ -559,10 +559,76 @@ main .text a {
     margin-bottom: 20px;
     max-width: 687px;
     margin-left: 13rem;
+}
 
-
+#Gallery {
+    padding: 10rem 0;
 
 }
+
+#Gallery .all {
+    margin: -10 40px;
+}
+
+#Gallery .gallery-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 20px;
+    color: #fff;
+    border: 1px solid #E5E5E5;
+    background-color: #fff;
+}
+
+#Gallery #main-text p {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+}
+
+#Gallery #main-text h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+    font-size: 40px;
+}
+
+#Gallery .gallery-item:hover {
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Gallery .gallery-item:hover .gallery-item-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+#Gallery .gallery-item-overlay {
+    position: absolute;
+    top: 10px;
+    right: -2px;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+    background-color: rgba(199, 161, 122, 0.85);
+}
+
+#Gallery .gallery-item i {
+    font-size: 30px;
+}
+
+
 
 
 #phone-header {
@@ -573,7 +639,7 @@ main .text a {
     top: 0;
     z-index: 999;
     background-color: white;
-   
+
 }
 
 
@@ -657,7 +723,7 @@ main .text a {
     border: none;
     position: relative;
     right: 6%;
-    
+
 }
 
 #phone-about {
@@ -1024,12 +1090,84 @@ main .text a {
 }
 
 
+#phone-gallery {
+    padding: 10rem 0;
+
+}
+
+#phone-gallery .all {
+    margin: -10 40px;
+}
+
+#phone-gallery .gallery-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 20px;
+    color: #fff;
+    border: 1px solid #E5E5E5;
+    background-color: #fff;
+}
+
+#phone-gallery #main-text p {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+}
+
+#phone-gallery #main-text h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+    font-size: 24px;
+}
+
+#phone-gallery .gallery-item:hover {
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#phone-gallery .gallery-item:hover .gallery-item-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+#phone-gallery .gallery-item-overlay {
+    position: absolute;
+    top: 10px;
+    right: -2px;
+    bottom: 10px;
+    left: 5px;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+    background-color: rgba(199, 161, 122, 0.85);
+}
+
+#phone-gallery .gallery-item i {
+    font-size: 30px;
+}
+
+#phone-gallery {
+    display: none;
+}
+
+
 
 @media(max-width:576px) {
     header {
-        display: none;        
+        display: none;
     }
-    
+
     main {
         display: none;
     }
@@ -1051,6 +1189,10 @@ main .text a {
     }
 
     #Client {
+        display: none;
+    }
+
+    #Gallery {
         display: none;
     }
 
@@ -1079,6 +1221,10 @@ main .text a {
     }
 
     #phone-client {
+        display: block;
+    }
+
+    #phone-gallery {
         display: block;
     }
 
