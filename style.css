@@ -7,7 +7,7 @@
 header {
     display: flex;
     align-items: center;
-    
+    box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
     position: sticky;
     top: 0%;
     z-index: 999;
@@ -18,26 +18,61 @@ header {
 .icons {
     text-align: end;
     margin-right: 35px;
+    position: relative;
+}
+
+header .icons .count {
+    font-size: 12px;
+    line-height: 1;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+
+    position: absolute;
+    bottom: 55%;
+    right: 107px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 100%;
+    background-color: #000;
+
+}
+
+.icons .amount {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out 50ms;
 }
 
 .icons i {
+    cursor: pointer;
     padding: 12px;
+    background-color: white;
+    transition: all 0.4s ease-in-out 50ms;
+}
+
+header .icons i:hover {
+    color: #C7A17A;
+    opacity: 3;
+}
+
+header .icons .amount:hover {
+    opacity: 1;
+    color: #C7A17A;
 }
 
 header .logo {
     width: 80%;
 }
 
+
 .logo img {
     margin-left: 35px;
 }
 
-
-
-
 nav ul {
     padding: 0;
     list-style: none;
+    transition: all 0.4s ease 0s;
 }
 
 nav ul li {
@@ -45,31 +80,32 @@ nav ul li {
     position: relative;
     line-height: 21px;
     text-align: left;
+    padding: 10px 20px;
+    
 }
 
 nav ul li a {
     display: block;
     font-size: 18px;
-
-   
     color: black;
     text-decoration: none;
 }
 
 nav ul li a:hover {
     color: #C7A17A;
-    
+    text-decoration: none;
 }
 
 nav ul li ul.dropdown {
-    min-width: 230%;
-    /* Set width of the dropdown */
+    min-width: 250%;
     background: white;
     display: none;
     top: 159%;
     position: absolute;
     z-index: 999;
     left: 0;
+    transition: all 0.5s;
+
 }
 
 nav ul li:hover ul.dropdown {
@@ -80,7 +116,8 @@ nav ul li:hover ul.dropdown {
 nav ul li ul.dropdown li {
     display: block;
 }
-.navbar{
+
+.navbar {
     display: flex;
     position: relative;
     right: 20%;
@@ -89,6 +126,8 @@ nav ul li ul.dropdown li {
     justify-content: left;
     align-items: center;
 }
+
+
 
 
 
@@ -158,88 +197,6 @@ main .text a {
 }
 
 
-
-
-.menu-bar {
-    background-color: var(--color-black);
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-
-    position: relative;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-}
-
-ul li {
-    /* width: 120px; */
-    padding: 10px 30px;
-    /* text-align: center; */
-
-    position: relative;
-}
-
-ul li a {
-    font-size: 20px;
-    color: var(--color-white);
-    text-decoration: none;
-
-    transition: all 0.3s;
-}
-
-ul li a:hover {
-    color: var(--color-primary);
-}
-
-.fas {
-    float: right;
-    margin-left: 10px;
-    padding-top: 3px;
-}
-
-/* dropdown menu style */
-.dropdown-menu {
-    display: none;
-}
-
-ul li:hover .dropdown-menu {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: var(--color-black);
-}
-
-ul li:hover .dropdown-menu ul {
-    display: block;
-    margin: 10px;
-}
-
-ul li:hover .dropdown-menu ul li {
-    width: 150px;
-    padding: 10px;
-}
-
-.dropdown-menu-1 {
-    display: none;
-}
-
-.dropdown-menu ul li:hover .dropdown-menu-1 {
-    display: block;
-    position: absolute;
-    left: 150px;
-    top: 0;
-    background-color: var(--color-black);
-}
-
-
-
 #About {
     padding: 10rem 0;
 }
@@ -296,6 +253,7 @@ ul li:hover .dropdown-menu ul li {
 #Service #main-text h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
+    font-size: 40px;
     line-height: 1.25;
     margin-top: 0;
     margin-bottom: 8px;
@@ -303,16 +261,21 @@ ul li:hover .dropdown-menu ul li {
 }
 
 #Service .card img {
-    width: 30%;
+    width: 27%;
     margin-top: 35px;
     padding-left: 20px;
 }
 
 #Service .card {
-    width: 100%;
+
+    width: 100.4444444444%;
     height: 250px;
-    margin: 20px;
+    margin: 15px;
+    position: relative;
+    top: 12%;
+    right: 5%;
 }
+
 
 #Service #main-text p {
     font-size: 18px;
@@ -330,6 +293,22 @@ ul li:hover .dropdown-menu ul li {
     margin-bottom: 8px;
     color: #1F2226;
 
+}
+
+.card .card-body h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card .card-body p {
+    font-size: 14px;
+    margin: 0;
 }
 
 #Area #main-text p {
@@ -376,7 +355,8 @@ ul li:hover .dropdown-menu ul li {
 
 #Area .map {
     position: absolute;
-    top: 7%;
+    top: 6%;
+
 }
 
 #Area button {
@@ -395,7 +375,7 @@ ul li:hover .dropdown-menu ul li {
 
 .right-form {
     position: relative;
-    left: 9%;
+    left: 7%;
 }
 
 #Collection #main-text h2 {
@@ -522,14 +502,78 @@ ul li:hover .dropdown-menu ul li {
     background-color: #1F2226;
 }
 
+
+#Client {
+    margin-top: 20px;
+    background-image: url(https://htmldemo.net/kofi/kofi/assets/images/testimonial/testimonial-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 110px 0;
+    text-align: center;
+    background-color: #F6F6F6 !important;
+}
+
+
+#Client .bottom img {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#Client #main-text p {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+}
+
+#Client #main-text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+}
+
+#Client .bottom h5 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+    font-size: 14px;
+    margin-top: 35px;
+
+}
+
+#Client .bottom p {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    max-width: 687px;
+    margin-left: 13rem;
+
+
+
+}
+
+
 #phone-header {
     display: none;
     overflow-x: hidden;
     position: sticky;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
     top: 0;
     z-index: 999;
     background-color: white;
+   
 }
+
+
 
 
 .ph-all .left-logo img {
@@ -610,7 +654,7 @@ ul li:hover .dropdown-menu ul li {
     border: none;
     position: relative;
     right: 6%;
-    margin-top: 10px;
+    
 }
 
 #phone-about {
@@ -701,9 +745,8 @@ ul li:hover .dropdown-menu ul li {
 }
 
 #phone-service .card {
-
-
-    margin: 25px;
+    max-height: 700px;
+    margin-top: 25px;
 }
 
 #phone-service #main-text p {
@@ -744,7 +787,7 @@ ul li:hover .dropdown-menu ul li {
 
 
 #phone-area {
-    padding: 5rem 0;
+    padding: 1rem 0;
     overflow: hidden;
     position: relative;
 }
@@ -933,13 +976,57 @@ ul li:hover .dropdown-menu ul li {
     display: none;
 }
 
+#phone-client {
+    background: #F6F6F6;
+    padding: 60px 0;
+    display: none;
+    text-align: center;
+}
+
+#phone-client .bottom {
+    margin-top: 40px;
+}
+
+#phone-client #main-text p {
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+
+}
+
+#phone-client .bottom p {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 321px;
+    margin-left: 10px;
+
+}
+
+#phone-client .bottom h5 {
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#phone-client #main-text h2 {
+    font-size: 24px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1F2226;
+}
+
 
 
 @media(max-width:576px) {
     header {
-        display: none;
+        display: none;        
     }
-
+    
     main {
         display: none;
     }
@@ -957,6 +1044,10 @@ ul li:hover .dropdown-menu ul li {
     }
 
     #Collection {
+        display: none;
+    }
+
+    #Client {
         display: none;
     }
 
@@ -981,6 +1072,10 @@ ul li:hover .dropdown-menu ul li {
     }
 
     #phone-collection {
+        display: block;
+    }
+
+    #phone-client {
         display: block;
     }
 

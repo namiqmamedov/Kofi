@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kofi</title>
+    <title>Kofi - Coffee Shop</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -25,7 +26,7 @@
                 <div class="col-lg-6">
                     <nav class="navbar">
                         <ul>
-                            <li>
+                            <li class="sub-menu">
                                 <a href="#">Home</a>
                                 <ul class="dropdown">
                                     <li><a href="#">Home One</a></li>
@@ -34,7 +35,7 @@
                                     <li><a href="#">Home Four</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Shop</a></li>
+                            <li class="sub-menu"><a href="#">Shop</a></li>
                             <li>
                                 <a href="#">Pages </a>
                                 <ul class="dropdown">
@@ -45,8 +46,8 @@
                                     <li><a href="#">FAQ</a></li>
                                 </ul>
                             </li>
-                            
-                            <li>
+
+                            <li class="sub-menu">
                                 <a href="#">Blog</a>
                                 <ul class="dropdown">
                                     <li><a href="#">Blog Left Sidebar</a></li>
@@ -56,16 +57,17 @@
                             </li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
-                      </nav>
+                    </nav>
                 </div>
                 <div class="col-lg-3">
                     <div class="icons text-end">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <i class="fa-solid fa-cart-shopping">
-
+                            <span style="padding-right: 3px;" class="count">02</span>
                         </i>
                         <span class="amount">$229.00</span>
                         <i class="fa-solid fa-gear"></i>
+
                     </div>
 
                 </div>
@@ -134,8 +136,8 @@
                             <img src="https://htmldemo.net/kofi/kofi/assets/images/feature/two/feature-1.png"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Coffee World sorts</h5>
-                                <p class="card-text">This is the perfect place to find a nice and cozy spot to sip
+                                <h3 class="card-title">Coffee World sorts</h3>
+                                <p class="card-text">This is the perfect place to find a nice and <br> cozy spot to sip
                                     some.</p>
                             </div>
                         </div>
@@ -145,9 +147,8 @@
                             <img src="https://htmldemo.net/kofi/kofi/assets/images/feature/two/feature-2.png"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Sed sagittis sodales</h5>
-                                <p class="card-text">This is the perfect place to find a nice and cozy spot to sip
-                                    some.</p>
+                                <h3 class="card-title">Sed sagittis sodales</h3>
+                                <p class="card-text">Coffee Bean and more shops right in this website.</p>
                             </div>
                         </div>
                     </div>
@@ -156,9 +157,9 @@
                             <img src="https://htmldemo.net/kofi/kofi/assets/images/feature/two/feature-3.png"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Curabitur in eleifend</h5>
-                                <p class="card-text">This is the perfect place to find a nice and cozy spot to sip
-                                    some.</p>
+                                <h3 class="card-title">Curabitur in eleifend</h3>
+                                <p class="card-text">Find the Java Jungle, Coffee Bean and <br> more shops right in this
+                                    website.</p>
                             </div>
                         </div>
                     </div>
@@ -167,9 +168,9 @@
                             <img src="https://htmldemo.net/kofi/kofi/assets/images/feature/two/feature-4.png"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Eleifend vehicula odio.</h5>
-                                <p class="card-text">This is the perfect place to find a nice and cozy spot to sip
-                                    some.</p>
+                                <h3 class="card-title">Eleifend vehicula odio.</h3>
+                                <p class="card-text">Perfect place to find a nice and some more shops right in this
+                                    website.</p>
                             </div>
                         </div>
                     </div>
@@ -178,9 +179,9 @@
                             <img src="https://htmldemo.net/kofi/kofi/assets/images/feature/two/feature-5.png"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">The best World sorts</h5>
-                                <p class="card-text">This is the perfect place to find a nice and cozy spot to sip
-                                    some.</p>
+                                <h3 class="card-title">The best World sorts</h3>
+                                <p class="card-text">The perfect place to find a nice and cozy <br> spot to sip some.
+                                    You'll find the Java.</p>
                             </div>
                         </div>
                     </div>
@@ -189,9 +190,9 @@
                             <img src="https://htmldemo.net/kofi/kofi/assets/images/feature/two/feature-6.png"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Sodales lobortis sorts</h5>
-                                <p class="card-text">This is the perfect place to find a nice and cozy spot to sip
-                                    some.</p>
+                                <h3 class="card-title">Sodales lobortis sorts</h3>
+                                <p class="card-text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id
+                                    vehicula odio.</p>
                             </div>
                         </div>
                     </div>
@@ -216,7 +217,7 @@
                         <div class="map">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2888008159102!2d-74.00840238428755!3d40.71165844557289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a227e9151bf%3A0x920aa4ea50ed37d9!2s41%20Park%20Row%2C%2041%20Park%20Row%2C%20New%20York%2C%20NY%2010038%2C%20USA!5e0!3m2!1sen!2s!4v1662121045633!5m2!1sen!2s"
-                                width="690" height="643" style="border:0;" allowfullscreen="" loading="lazy"
+                                width="683" height="662" style="border:none;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
@@ -460,8 +461,35 @@
         </div>
     </section>
 
-    <section id="phone-header">
+
+    <section id="Client">
         <div class="container">
+            <div class="top text-center" id="main-text">
+                <p>What Client Says</p>
+                <h2>TESTIMONIALS</h2>
+            </div>
+
+            <div class="bottom">
+                <div class="testimonial-client-thumb"><img loading="lazy" style="border-radius: 100%;"
+                        src="https://htmldemo.net/kofi/kofi/assets/images/testimonial/testimonial-1.png"
+                        alt="Hester Perkins" width="100" height="100">
+
+                </div>
+                <div class="zip ">
+                    <p>I've been drinking coffee for years and I can honestly say that coffee is the best product out
+                        there. Coffee has a perfect taste and it wakes me up in the morning. It's also really
+                        affordable.</p>
+                </div>
+                <div class="testimonial-client-info">
+                    <h5 class="testimonial-client-name">HESTER PERKINS</h5>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="phone-header">
+        <div class="container-fluid">
             <div class="ph-all">
                 <div class="left-logo">
                     <img src="https://htmldemo.net/kofi/kofi/assets/images/logo/logo-dark.png" alt="">
@@ -493,7 +521,7 @@
                     <p>Experience the decibels like your ears deserve to. Safe for the ears,very for the
                         heart. A treat to your ears.</p>
                     <div class="hero-slide-2-button">
-                        <a href="shop-left-sidebar.html" class="btn btn-primary btn-dark-hover">Explore More <i
+                        <a href="shop-left-sidebar.html" class="btn btn-primary btn-dark-hover ">Explore More <i
                                 class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                 </div>
@@ -733,6 +761,35 @@
             </div>
         </div>
     </section>
+
+    <section id="phone-client">
+        <div class="container">
+            <div class="top text-center" id="main-text">
+                <p>What Client Says</p>
+                <h2>TESTIMONIALS</h2>
+            </div>
+            <div class="bottom">
+                <div class="testimonial-client-thumb"><img loading="lazy" style="border-radius: 100%;"
+                        src="https://htmldemo.net/kofi/kofi/assets/images/testimonial/testimonial-1.png"
+                        alt="Hester Perkins" width="100" height="100">
+
+                </div>
+                <div class="zip text-center ">
+                    <p>I've been drinking coffee for years and I can honestly say that coffee is the best product out
+                        there. Coffee has a perfect taste and it wakes me up in the morning. It's also really
+                        affordable.</p>
+                </div>
+                <div class="testimonial-client-info">
+                    <h5 class="testimonial-client-name">HESTER PERKINS</h5>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
 
 </body>
 
